@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <option value="K">K</option>
         </select>
         <select name="carta1_seme">
-            <option value="C">Cuori</option>
+            <option value="C">Cuori</option> 
             <option value="Q">Quadri</option>
             <option value="F">Fiori</option>
             <option value="P">Picche</option>
