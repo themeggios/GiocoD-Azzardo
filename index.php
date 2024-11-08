@@ -82,13 +82,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">SALVA</button>
     </form>
 
-    <form action="incassi.php" method="post">
-        <button type="submit">FINISCI</button>
-    </form>
-
-    <form action="logout.php" method="post">
-        <button type="submit">NUOVA</button>
-    </form>
+    <a href="incassi.php"><button type="button">FINISCI</button></a>
+    <br> <br>
+    <a href="logout.php"><button type="button">NUOVA</button></a>
 
 </body>
 </html>
