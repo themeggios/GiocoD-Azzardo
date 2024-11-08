@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-// Inizializza l'array delle giocate se non esiste
-if (!isset($_SESSION['giocate'])) {
-    $_SESSION['giocate'] = [];
-}
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Salva i dati della giocata
     $carta1_valore = $_POST['carta1_valore'];
@@ -31,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <h1>Registrazione Giocate Poker</h1>
+    
     <form action="index.php" method="post">
         <label for="carta1">Carta 1:</label>
         <select name="carta1_valore" id="carta1">
